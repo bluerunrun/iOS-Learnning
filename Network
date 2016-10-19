@@ -1,0 +1,18 @@
+
+
+  一、简介
+  我们知道，在七层网络协议中有物理层->数据链路层->网络层->传输层->会话层->表示层->应用层
+  NSURLSession用于管理网络接口的创建、维护、删除等等工作
+  
+  1.需要采用合适的方法来获得上传文件的二进制数据类型（ MIMEType，获取方式如下）
+    1.1 http://www.w3school.com.cn/media/media_mimeref.asp 查询
+    1.2对着该文件发送一个网络请求，接收到该请求响应的时候，可以通过响应头信息中的 MIMEType 属性得到
+    1.3使用通用的二进制数据类型表示任意的二进制数据 application/octet-stream
+    1.4调用 C 语言的 API 来获取
+      [self mimeTypeForFileAtPath:@"此处为上传文件的路径"]
+
+
+
+
+  参考文章链接: http://www.cnblogs.com/mddblog/p/5215453.html NSURLSession使用详解
+               http://itangqi.me/2016/04/01/from-nsurlconnection-to-nsurlsession/ 从 NSURLConnection 到 NSURLSession
