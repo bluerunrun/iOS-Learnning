@@ -16,3 +16,4 @@
 
   参考文章链接: http://www.cnblogs.com/mddblog/p/5215453.html NSURLSession使用详解
                http://itangqi.me/2016/04/01/from-nsurlconnection-to-nsurlsession/ 从 NSURLConnection 到 NSURLSession
+               https://objccn.io/issue-5-4/  从 NSURLConnection 到 NSURLSession
