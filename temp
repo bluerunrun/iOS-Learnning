@@ -1,0 +1,13 @@
+    //四舍五入
+    NSNumber *aNumber = [NSNumber numberWithDouble:1176469.411764];
+    NSDecimalNumber *decNum = [NSDecimalNumber decimalNumberWithDecimal:[aNumber decimalValue]];
+    NSDecimalNumberHandler *roundingBehavior = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundPlain
+                                                                                                      scale:2
+                                                                                           raiseOnExactness:NO
+                                                                                            raiseOnOverflow:NO
+                                                                                           raiseOnUnderflow:NO
+                                                                                        raiseOnDivideByZero:NO];
+    
+    NSDecimalNumber *roundingNum = [decNum decimalNumberByRoundingAccordingToBehavior:roundingBehavior];
+    NSString *tempStr =[roundingNum stringValue];
+    double aa = [decNum doubleValue];
